@@ -14,5 +14,6 @@ body {
 
 .productsContainer {
 	display: flex;
-	border: solid 2px black;
+	margin-top: 10px;
+	flex-wrap: wrap;
 }

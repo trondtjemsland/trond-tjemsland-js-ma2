@@ -22,10 +22,17 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: solid 2px black;
+  margin-top: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .cardImg {
   width: 200px;
+  margin: 10px;
+}
+
+.card {
+  margin: 0px 15px;
 }
 /*# sourceMappingURL=style.css.map */
