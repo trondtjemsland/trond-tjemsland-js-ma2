@@ -23,11 +23,15 @@ search.onkeyup = function () {
 	filteredArray.forEach((element) => {
 		loading.innerHTML = ``;
 		document.querySelector('.productsContainer').innerHTML += `
-        <div class="cards">
-            <h5>${element.title}</h5>
-            <p>${element.id}</p>
-            <p>${element.price}</p>
-            <img class="cardImg" src="${element.image}"/>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top cardsImg" src="${element.image}" />
+            <div class="card-body">
+            <h5 class="card-title">${element.title}</h5>
+            <p class="card-text">${element.price}</p>
+            <a href="#" class="btn btn-primary">
+                Go somewhere
+            </a>
+            </div>
         </div>
         `;
 	});
